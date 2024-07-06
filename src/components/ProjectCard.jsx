@@ -10,7 +10,7 @@ const ProjectCard = () => {
         <div className='flex border-t-[3px] border-black'>
             <div className='p-3 border-r-[3px] border-black w-1/3'>ExpressJS, MongoDB</div>
             <div className='p-3'>/github /view</div>
-            <div className='w-20 bg-black'></div>
+            <div className='w-[6rem] bg-black'></div>
         </div>
     </div>
   )
