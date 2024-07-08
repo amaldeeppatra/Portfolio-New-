@@ -8,6 +8,9 @@ export default {
     extend: {
       fontFamily: {
         "ibmMono": "IBM Plex Mono"
+      },
+      screens: {
+        sm: '430px'
       }
     },
   },
