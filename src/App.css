@@ -36,18 +36,6 @@ body.dark, .dark {
     color: var(--text-color);
 }
 
-/* .theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px 10px;
-    cursor: pointer;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    border: 2px solid var(--text-color);
-    border-radius: 25px;
-} */
-
 
 .theme-toggle {
     position: fixed;
@@ -59,6 +47,7 @@ body.dark, .dark {
     color: var(--text-color);
     border: 2px solid var(--text-color);
     border-radius: 25px;
+    z-index: 1;
   }
   
   /* For larger screens */
