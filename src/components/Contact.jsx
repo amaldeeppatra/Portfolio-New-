@@ -158,7 +158,7 @@ const Contact = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/contact', {
+      const response = await fetch('https://portfolio-backend-rpxe.onrender.com/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
