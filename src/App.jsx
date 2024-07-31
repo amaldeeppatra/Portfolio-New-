@@ -11,6 +11,7 @@ import ReactDOM from 'react-dom/client'
 import Home from './pages/Home';
 import ProjectsPage from './pages/ProjectsPage';
 import Socials from './pages/Socials';
+import WakeupServer from './components/WakeupServer/WakeupServer';
 
 
 // function App() {
@@ -46,6 +47,7 @@ import Socials from './pages/Socials';
 function App() {
   return (
     <ThemeProvider>
+      <WakeupServer/>
       <MainApp />
     </ThemeProvider>
   );
