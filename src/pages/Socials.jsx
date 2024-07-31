@@ -91,7 +91,7 @@ const Socials = () => {
     <>
       <Navbar />
 
-      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 pt-10 pb-12 relative font-ibmMono">
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 pt-10 md:pb-[9.7rem] pb-7 relative font-ibmMono">
         <SocialCard {...socialProfiles[0]} />
         <SocialCard {...socialProfiles[1]} />
         <div className="col-span-1 sm:col-span-2 flex justify-center items-center">
