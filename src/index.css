@@ -42,25 +42,22 @@ body.dark, .dark {
 }
 
 
-.theme-toggle {
-    position: fixed;
-    top: 50px;
-    right: 5px;
-    padding: 8px;
-    cursor: pointer;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    border: 2px solid var(--text-color);
-    border-radius: 25px;
-    z-index: 1;
-  }
+
   
   /* For larger screens */
-  @media (min-width: 430px) {
+  @media (min-width: 390px) {
     .theme-toggle {
-      top: 20px;
-      right: 20px;
-      padding: 10px;
+      /* top: 45px; */
+      /* right: 20px; */
+      /* padding: 10px; */
+      top: 30px;
+      border-radius: 25px;
+    }
+
+    #theme-toggle-button{
+      top: -35px;
+      display: none;
+      height: 0;
     }
   }
 
@@ -124,4 +121,91 @@ body.dark, .dark {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   border-radius: 15px;
   color: white;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 60px;
+  right: 5px;
+  /* padding: 8px; */
+  cursor: pointer;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  /* border: 2px solid var(--text-color); */
+  border-radius: 25px;
+  z-index: 1;
+}
+
+
+#theme-toggle-button {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 4em;
+  cursor: pointer;
+  /* top: 10px; */
+  right: 10px;
+}
+
+/* Hide default HTML checkbox */
+#toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+}
+
+/* night sky background */
+#toggle:checked + svg #container {
+  fill: #2b4360;
+}
+
+/* move button to right when checked */
+#toggle:checked + svg #button {
+  transform: translate(28px, 2.333px);
+}
+
+/* show/hide sun and moon based on checkbox state */
+#sun {
+  opacity: 1;
+}
+
+#toggle:checked + svg #sun {
+  opacity: 0;
+}
+
+#moon {
+  opacity: 0;
+}
+
+#toggle:checked + svg #moon {
+  opacity: 1;
+}
+
+/* show or hide background items on checkbox state */
+#cloud {
+  opacity: 1;
+}
+
+#toggle:checked + svg #cloud {
+  opacity: 0;
+}
+
+#stars {
+  opacity: 0;
+}
+
+#toggle:checked + svg #stars {
+  opacity: 1;
 }
