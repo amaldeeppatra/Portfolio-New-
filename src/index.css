@@ -20,6 +20,7 @@ body{
     --border-color: black;
     --blackbox-color: black;
     --blackbox-text: #F4F4FF;
+    --hero-color: #334257;
 }
 
   
@@ -29,16 +30,19 @@ body{
     --border-color: #F4F4FF;
     --blackbox-color: #F4F4FF;
     --blackbox-text: black;
+    --hero-color: #597297;
 }
 
 body.light, .light {
     background-color: var(--background-color);
     color: var(--text-color);
+    color: var(--hero-color);
 }
 
 body.dark, .dark {
     background-color: var(--background-color);
     color: var(--text-color);
+    color: var(--hero-color);
 }
 
 
